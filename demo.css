@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+#controls {
+  width: 300px;
+  padding: 15px;
+  background: #1b1f38;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#controls h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#pointForm input, 
+#pointForm button, 
+#resetBtn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#pointForm input {
+  background: #f4f4f4;
+}
+
+#pointForm button, #resetBtn {
+  background: #0078ff;
+  color: white;
+  cursor: pointer;
+}
+
+#pointForm button:hover, #resetBtn:hover {
+  background: #005ec4;
+}
+
+#infoPanel {
+  margin-top: 15px;
+  padding: 10px;
+  background: #2c2f48;
+  border-radius: 8px;
+}
+
+#map {
+  flex-grow: 1;
+  height: 100vh;
+}
+
+#calcBtn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+#calcBtn:hover {
+  background: #1f7c32;
+}
+
+/* 
+#streetViewBtn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #ff5722;
+  color: white;
+  cursor: pointer;
+}
+
+#streetViewBtn:hover {
+  background: #e64a19;
+}
+
+#streetViewModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+#streetViewContent {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+} */

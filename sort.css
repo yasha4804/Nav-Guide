@@ -1,0 +1,308 @@
+:root {
+  --bg: linear-gradient(135deg ,rgba(55, 146, 173, 1) 0%, rgba(7, 72, 82, 1) 30%, rgba(0, 18, 36, 1) 75%);
+  --card: linear-gradient(135deg ,rgba(0, 18, 36, 1)  35%, rgba(7, 72, 82, 1) 75%, rgba(55, 146, 173, 1) 100%);
+  --text: #cde1e8;
+  --accent: #7395b5;
+  --muted: #fafbfd;                 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background:var(--card);
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+header p {
+  color: var(--muted);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.card ul, .card ol {
+  padding-left: 1.5rem;
+}
+
+pre {
+  background: rgba(255,255,255,0.05);
+  padding: 0.8rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+.btn.primary {  background-image: linear-gradient(to right,  rgba(7, 72, 82, 1)  0%,rgba(55, 146, 173, 1) 51%,rgba(0, 18, 36, 1)  100%)}
+.btn.primary {
+  height: 60px;
+  width: 180px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(253, 254, 255);            
+  border: none;
+  box-shadow: 0 0 15px #eeeeeeda;
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 15px;
+margin-left: 320px;
+}
+.btn.primary a{
+  color: #011521;
+}
+.btn.primary:hover {
+  opacity: 0.9; 
+ background-position: right center; /* change the direction of the change here */
+ color: #fff;
+ text-decoration: none;
+}
+.btn.primary a:hover{
+  color: #c3d1da;
+}    
+.highlight {
+  border: 1px solid var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+:root {
+  --bg: linear-gradient(135deg ,rgba(55, 146, 173, 1) 0%, rgba(7, 72, 82, 1) 30%, rgba(0, 18, 36, 1) 75%);
+  --card: linear-gradient(135deg ,rgba(0, 18, 36, 1)  35%, rgba(7, 72, 82, 1) 75%, rgba(55, 146, 173, 1) 100%);
+  --text: #cde1e8;
+  --accent: #7395b5;
+  --muted: #fafbfd;                 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card);
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+header p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.card ul, .card ol {
+  padding-left: 1.5rem;
+}
+
+pre {
+  background: rgba(255,255,255,0.05);
+  padding: 0.8rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.btn.primary {
+  height: 60px;
+  width: 180px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px auto; /* centered on mobile */
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(253, 254, 255);            
+  border: none;
+  box-shadow: 0 0 15px #eeeeeeda;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.btn.primary a {
+  color: #011521;
+}
+
+.btn.primary:hover {
+  opacity: 0.9; 
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn.primary a:hover {
+  color: #c3d1da;
+}    
+
+.highlight {
+  border: 1px solid var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p, .card ul, .card ol, pre {
+    font-size: 0.95rem;
+  }
+
+  .btn.primary {
+    width: 160px;
+    font-size: 14px;
+    padding: 12px 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .card p, .card ul, .card ol, pre {
+    font-size: 0.9rem;
+  }
+
+  .btn.primary {
+    width: 140px;
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.85rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p, .card ul, .card ol, pre {
+    font-size: 0.85rem;
+  }
+
+  .btn.primary {
+    width: 100%;
+    max-width: 220px;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+}

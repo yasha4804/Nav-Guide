@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GPS Calculates Shortest Path</title>
+  <link rel="stylesheet" href="sort.css" />
+</head>
+<body>
+  <header>
+    <h1>🚗 How GPS Calculates the Shortest Path</h1>
+    <p>From satellites to smart algorithms — the journey of finding the best route</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. GPS Positioning</h2>
+      <p>
+        The <strong>Global Positioning System (GPS)</strong> uses signals from satellites to calculate 
+        your exact <em>latitude and longitude</em>. This gives your device the <strong>current location</strong>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Map as a Graph</h2>
+      <p>
+        Digital maps are stored as a <strong>graph</strong>:
+      </p>
+      <ul>
+        <li><strong>Nodes</strong> → junctions, intersections, or waypoints.</li>
+        <li><strong>Edges</strong> → roads connecting nodes, with distance or time as weights.</li>
+      </ul>
+      <pre>
+ A ---5km--- B ---2km--- C
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>3. Shortest Path Algorithms</h2>
+      <p>
+        Once GPS knows your <strong>start</strong> and <strong>destination</strong>, 
+        algorithms are used to find the <strong>best route</strong>:
+      </p>
+      <ul>
+        <li><strong>Dijkstra’s Algorithm</strong> → Finds the shortest distance.</li>
+        <li><strong>A* Algorithm</strong> → Uses a heuristic (straight-line distance) to find the goal faster.</li>
+        <li><strong>Bellman-Ford Algorithm</strong> → Works when there are negative edge weights.</li>
+        <li><strong>Floyd-Warshall</strong> → Finds shortest paths between <em>all pairs</em> of nodes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Steps in Action</h2>
+      <ol>
+        <li>GPS detects <strong>your current position</strong>.</li>
+        <li>You enter a <strong>destination</strong>.</li>
+        <li>Map converts roads into a <strong>graph</strong>.</li>
+        <li>Algorithm runs to calculate <strong>shortest path</strong>.</li>
+        <li>Navigation app shows <strong>best route</strong>.</li>
+      </ol>
+    </section>
+
+    <section class="card highlight">
+      <h2>✅ Example</h2>
+      <pre>
+If you are at A and want to go to D:
+
+Route 1: A → B (2 km) → D (4 km) = 6 km
+Route 2: A → C (3 km) → D (2 km) = 5 km ✅ Shortest
+      </pre>
+      <p>
+        The algorithm chooses: <strong>A → C → D</strong>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Types of Shortest Path Calculations</h2>
+      <p>
+        In real navigation apps, “shortest path” can mean different things:
+      </p>
+      <ul>
+        <li><strong>Shortest Distance</strong> → minimum kilometers (Dijkstra).</li>
+        <li><strong>Fastest Time</strong> → considers traffic, speed limits, and road conditions.</li>
+        <li><strong>Least Cost</strong> → toll-free or fuel-efficient route.</li>
+        <li><strong>Scenic Routes</strong> → sometimes chosen for tourism over efficiency.</li>
+      </ul>
+    </section>
+     <button class="btn primary" ><a href="index.html"><b>Try Demo</b></a></button>
+  </main>
+  
+  <footer>
+    <p> showing how GPS + algorithms guide us every day 🚀</p>
+  </footer>
+
+  <script src="sort.js"></script>
+</body>
+</html>
